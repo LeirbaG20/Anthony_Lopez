@@ -1,0 +1,25 @@
+div {
+    border: 1px solid black;
+    padding: 25px 50px 75px 100px;
+    background-color: lightblue;
+}
+
+div.intern {
+    margin: auto;
+    padding: 25px 50px 75px 100px;
+    background-color: orange;
+    width: max-content;
+}
+
+div.ex2 {
+    width: 300px;
+    padding: 25px;
+    border-collapse: collapse;
+}
+
+div.ex3 {
+    width: 320px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}

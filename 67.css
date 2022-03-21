@@ -1,0 +1,43 @@
+div.yellow {
+    background-color: yellow;
+}
+
+div.blue {
+    background-color: blue;
+}
+
+div.red {
+    background-color: red;
+}
+
+div.orange {
+    background-color: orange;
+}
+
+div.purple {
+    background-color: purple;
+}
+
+div.green {
+    background-color: green;
+}
+
+
+.body {
+    color: brown;
+}
+
+.header {
+    color: #AAA;
+}
+
+.nav {
+    color: #888;
+}
+
+.section {
+    color: red;
+}
+*{
+margin: 2%;
+}

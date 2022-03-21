@@ -1,0 +1,17 @@
+/*style*/
+body{
+background-image: url(image/casa.png);
+background-repeat: no-repeat;
+background-position: right center;
+}
+h1 {
+    background-color: green;
+  }
+  
+  div {
+    background-color: lightblue;
+  }
+  
+  p {
+    background-color: yellow;
+}
