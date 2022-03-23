@@ -49,3 +49,15 @@ const citrus = fruits.slice(1, 3); //crea un array nuevo con los elementos selec
 document.getElementById("demo9").innerHTML = fruits + "<br><br>" + citrus;
 fruits.splice(3, 1); //MODIFICA el array eliminando estos elmentos
 document.getElementById("demo10").innerHTML = fruits;
+
+// Primer bucle
+//Creamos variable tipo texto
+let txt = "";
+//Por cada elemento de la arrat llamas a la funcion 02 y le pasa el valor, Ìndice, Array entero
+fruits.forEach(myFunction);
+
+document.getElementById("demo11").innerHTML = txt;
+function myFunction02(value, index, array) {
+    txt = txt + index + " " + value + "<br>";
+
+};
