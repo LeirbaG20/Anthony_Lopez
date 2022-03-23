@@ -52,12 +52,41 @@ document.getElementById("demo10").innerHTML = fruits;
 
 // Primer bucle
 //Creamos variable tipo texto
-let txt = "";
-//Por cada elemento de la arrat llamas a la funcion 02 y le pasa el valor, Ìndice, Array entero
-fruits.forEach(myFunction);
+{
+    let txt = "";
+    //Por cada elemento de la arrat llamas a la funcion 02 y le pasa el valor, Ìndice, Array entero
+    fruits.forEach(myFunction02);
 
-document.getElementById("demo11").innerHTML = txt;
-function myFunction02(value, index, array) {
-    txt = txt + index + " " + value + "<br>";
+    function myFunction02(value, index, array) {
+        txt = txt + index + " " + value + " <br>";
 
-};
+    }
+    document.getElementById("demo11").innerHTML = txt;
+
+    //Bucle For
+    let text;
+    text = "";
+    for (let i = 0; i < fruits.length; i++) {
+        text = text + i + " " + fruits[i] + "<br>";
+    }
+    document.getElementById("demo12").innerHTML = text;
+
+    //bucle con el primero de ultimo
+    txt = "";
+    fruits.forEach(myFunction03);
+    function myFunction03(value, index, array) {
+        txt = txt + " " + value + "<br>";
+
+    }
+    txt = txt + fruits[0];
+    document.getElementById("demo13").innerHTML = txt;
+
+    txt = "";
+    for (let i = 1 ;i < fruits.length; i++) {
+        txt = txt + fruits[i] + "<br>";
+    }
+    txt = txt + " " + fruits[0]
+    document.getElementById("demo14").innerHTML = txt;
+
+
+}
