@@ -72,21 +72,17 @@ document.getElementById("demo10").innerHTML = fruits;
     document.getElementById("demo12").innerHTML = text;
 
     //bucle con el primero de ultimo
-    txt = "";
-    fruits.forEach(myFunction03);
-    function myFunction03(value, index, array) {
-        txt = txt + " " + value + "<br>";
+
+    {
+
+        let mitexto="";
+        for (let i = 0; i < fruits.length; i++) {
+            var lafrutaEl = fruits.splice(0, 1);
+            fruits[fruits.length] = lafrutaEl;
+            mitexto = mitexto + fruits.toString() + "<br>";
+        }
+        document.getElementById("demo14").innerHTML = mitexto;
+
 
     }
-    txt = txt + fruits[0];
-    document.getElementById("demo13").innerHTML = txt;
-
-    txt = "";
-    for (let i = 1 ;i < fruits.length; i++) {
-        txt = txt + fruits[i] + "<br>";
-    }
-    txt = txt + " " + fruits[0]
-    document.getElementById("demo14").innerHTML = txt;
-
-
 }
