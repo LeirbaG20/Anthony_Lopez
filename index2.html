@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <script>
+        const list = ["mercedes", "masserati", "lamborghini", "ferrari", "fiat"];
+        function init() {
+            const main = document.getElementById("main");
+            const parrafo = document.getElementsByTagName("p");
+            main.innerHTML = "<p></p>";
+            main.innerHTML += "<p>segundo parrafo asignado</p>";
+            // for (let i = 0; i < list.length; i++) {
+            //     console.log(list(i));
+
+            // }
+            list.map((current, index) => {
+                main.innerHTML += "<p>" + (index+1) + "--->&nbsp;" + current + "</p>";
+            });
+
+
+        }
+        window.onload = init;
+
+    </script>
+</head>
+
+
+<body>
+    <div id="main">
+    </div>
+</body>
+
+</html>
+<!-- <script>
+    function init() {
+        const main = document.getElementById("main");
+        const parrafo = document.getElementsByTagName("p");
+        main.innerHTML = "<p>soy parrafo</p>";
+        parrafo[1].innerHTML = "Otro contenido para el párrafo";
+    }
+    window.onload = init;
+</script>
+
+<body>
+    <div id="main">hola que tal
+    </div>
+    <p>Soy otro párrafo</p>
+</body> -->
